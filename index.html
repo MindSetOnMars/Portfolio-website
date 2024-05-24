@@ -1,0 +1,61 @@
+<?php
+session_start();
+require('./DB.php');
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>my Space!</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div id="logo">
+                    <a href="index.html" class="none"><img src="logo.png" alt="Platform Logo"></a>
+                </div>
+                
+                <a class="right" href="contactMe.html">Email</a>
+                
+            </nav>
+        </header>
+        <div class="menu">
+                <h2>Hello!<br> Welcome to my website, I'm Walah Alhmemedy.</h2>
+                <h3>you can find me in these sites.</h3>
+                <a href="index.html" class="ref"><img src="github-logo.png"></a>
+            
+            
+            
+                <a href="index.html" class="ref"><img src="x-logo.png"></a>
+                
+          
+            
+                <a href="index.html" class="ref"><img src="linkedin-logo.png"></a>
+                
+            </div>
+            <div class="menu2">
+                <h3>or you can send me an email directly.</h3>
+                <form action="action_page.php" method="POST">
+                    <div >
+                      <label>Name</label><br>
+                      <input class="input" type="text" name="Name" required>
+                    </div>
+                    <div >
+                      <label>Email</label><br>
+                      <input class="input" type="text" name="Email" required>
+                    </div>
+                    <div>
+                      <label>Message</label><br>
+                      <textarea  class="input"  name="Message" rows="5" cols="30" required></textarea>
+                    </div>
+                    <button type="submit" class="submit">Send Message</button>
+                  </form>
+            </div>
+
+        </div>
+    </body>
+
+
+</html>
